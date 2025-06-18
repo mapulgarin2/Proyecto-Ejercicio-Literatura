@@ -35,7 +35,7 @@ Todo esto desde una interfaz de consola.
 ### Obligatorios
 
 1. **Buscar libro por título**
-   - Ingresar un título (en inglés)
+   - Ingresar un título 
    - Consultar la API Gutendex
    - Registrar el libro (si no está duplicado) junto a su autor en la base de datos
 
