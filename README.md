@@ -81,6 +81,29 @@ Todo esto desde una interfaz de consola.
   - Lógica para guardar y consultar libros  
 - `AutorService`  
   - Lógica para guardar, consultar autores y filtrar por año de vida
+ 
+### Modelo
+
+- `DatosGenerales`  
+  - Representa la respuesta general de la API Gutendex. Contiene la lista de libros obtenidos en una búsqueda.
+
+- `DatosLibro`  
+  - Representa los datos individuales de un libro devueltos por la API: título, idioma, descargas y autores.
+
+- `DatosAutor`  
+  - Representa los datos del autor que vienen en la API: nombre, año de nacimiento y año de fallecimiento.
+
+### Servicio
+
+- `ConsumoApiGutendex`  
+  - Clase encargada de consumir la API de Gutendex y obtener los datos en formato JSON.
+
+- `ConvertirDatos`  
+  - Implementación de la interfaz `IConvertirDatos`, que convierte el JSON obtenido de la API en objetos Java utilizando la librería Jackson.
+
+- `IConvertirDatos`  
+  - Interfaz que define el contrato para la conversión de datos JSON a objetos Java, permitiendo flexibilidad y reutilización.
+
 
 ### Principal
 
